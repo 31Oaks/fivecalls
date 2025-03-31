@@ -33,8 +33,8 @@ crontab -e
 
 In the file editor that opens, something along the lines of the below, depending on how often the scripts should run:
 
-0 * * * * cd /home/fivecalls/Projects/fivecalls && /bin/bash -c 'source .fivecalls/bin/activate && python fetch_data.py && deactivate >> .tmp/cron_fetch_data_logfile.log 2>&1'
-0 */2 * * * cd /home/fivecalls/Projects/fivecalls && /bin/bash -c 'source .fivecalls/bin/activate && python create_charts.py && deactivate >> .tmp/cron_create_charts_logfile.log 2>&1'
+50 * * * * cd /home/fivecalls/Projects/fivecalls && /bin/bash -c 'source .fivecalls/bin/activate && python fetch_data.py && deactivate >> .tmp/cron_fetch_data_logfile.log 2>&1'
+55 * * * * cd /home/fivecalls/Projects/fivecalls && /bin/bash -c 'source .fivecalls/bin/activate && python create_charts.py && deactivate >> .tmp/cron_create_charts_logfile.log 2>&1'
 
 
 
