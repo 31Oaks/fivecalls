@@ -39,14 +39,15 @@ def parse_json_to_db(data, utc_time, db_name="fivecalls.db", table_name="flat_da
 
 def fetch_and_store(keep_original_data=True, backup_path=backup_path):
     response = requests.get(url)
-    utc_time = datetime.now(timezone.utc).isoformat()
+    utc_time = datetime.now(timezone.utc).replace(microsecond=0)
+    safe_filename_time = utc_time.strftime("%Y%m%d_%H%M%S")
     if response.status_code == 200:
         data = response.json()
         parse_json_to_db(data, utc_time)
         if keep_original_data:
             backup_path = os.path.join(backup_path, 'original_data')
             os.makedirs(backup_path, exist_ok=True)
-            with open(f'{backup_path}/data_{utc_time}.json', 'w') as f:
+            with open(f'{backup_path}/data_{safe_filename_time}.json', 'w') as f:
                 json.dump(data, f)
             print(f"✅ Data saved at {utc_time}")
     else:
