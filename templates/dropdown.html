@@ -1,0 +1,6 @@
+<select onchange="location = this.value;" class="p-2 border rounded mb-4">
+    <option disabled selected>Choose chart</option>
+    {% for link in links %}
+      <option value="{{ link }}">{{ link.replace('.html','').replace('_',' ') }}</option>
+    {% endfor %}
+  </select>
