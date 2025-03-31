@@ -28,7 +28,7 @@ def parse_json_to_db(data, utc_time, db_name="fivecalls.db", table_name="flat_da
         with sqlite3.connect(db_name_tmp) as conn:
             df.to_sql(table_name, conn, if_exists='append', index=False)
         
-        # Remove only keep one month of data in charting db
+        # Only keep one month of data in charting db
         if path == 'data/':
             conn.execute(f"""
                 DELETE FROM {table_name}
