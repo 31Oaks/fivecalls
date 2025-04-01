@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FiveCalls Dashboard</title>
+  <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800">
+  <div class="flex flex-row gap-4 p-6">
+    <!-- Left column (15%) -->
+    <aside class="w-[15%] space-y-4 bg-white rounded-xl shadow-md p-4">
+      <h2 class="text-xl font-semibold flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M18 10A8 8 0 11.001 9.999 8 8 0 0118 10zM9 7a1 1 0 112 0v1a1 1 0 01-2 0V7zm1 4a1 1 0 100 2 1 1 0 000-2z" clip-rule="evenodd"/></svg>Relevant Links</h2>
+      <div class="text-sm text-gray-600 pt-4 space-y-2">
+        <p><strong>5 Calls is a free service that makes it very easy identify and contact your representative:</strong> 
+          <a href="https://5calls.org/" class="underline text-blue-600">5 Calls</a></p>
+        <p><strong>Learn more about contacting representatives:</strong> <a href="https://5calls.org/how" class="underline text-blue-600">5 Calls: How It Works</a></p>
+      </div>
+    </aside>
+
+    <!-- Middle column (60%) -->
+    <main class="w-[60%] bg-white rounded-xl shadow-md p-6">
+      <h1 class="text-2xl font-bold mb-4">Multiply Your Impact</h1>
+      <p class="mb-4">
+        Inefficient communication is one of the biggest challenges for collective action. If organizers could get the word out instantly, to everyone, about an action taking place, the impact would be greatly increased. Of course, we aren't all connected to one person or group who can mobilize everyone, all at once. 
+      </br></br>
+        This dashboard highlights which issues tracked by 5Calls.org are currently generating the most calls to elected representatives. It allows unconnected users to collectively organize, without being directly connected, to create a snowball effect for trending topics.
+
+      </br></br>
+        By joining in on trending topics, you help create a snowball effect — making the issues more visible and compelling to lawmakers.
+      </p>
+    </br></br>
+
+      <div class="flex gap-4 mb-4">
+        <div>
+          <label for="categorySelect" class="block text-sm font-medium mb-1">Category</label>
+          <select id="categorySelect" class="p-2 border rounded w-full"></select>
+        </div>
+        <div>
+          <label for="timeSelect" class="block text-sm font-medium mb-1">Time Range</label>
+          <select id="timeSelect" class="p-2 border rounded w-full">
+            <option value="48h">48 Hours</option>
+            <option value="1w">1 Week</option>
+            <option value="1mo">1 Month</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="chart" class="mb-6" style="height: 600px;"></div>
+      <div id="table" class="overflow-x-auto"></div>
+    </main>
+
+    <!-- Right column (25%) -->
+    <aside class="w-[25%] space-y-4 bg-white rounded-xl shadow-md p-4">
+      <h2 class="text-xl font-semibold flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" viewBox="0 0 20 20" fill="currentColor"><path d="M12.293 7.293a1 1 0 011.414 0L18 11.586V5a1 1 0 10-2 0v3.586l-3.293-3.293a1 1 0 00-1.414 1.414z"/><path d="M4 3a1 1 0 00-1 1v12a1 1 0 001 1h12a1 1 0 001-1V8a1 1 0 10-2 0v7H5V5h5a1 1 0 000-2H4z"/></svg>Notes for Use</h2>
+      <ul class="list-disc list-inside">
+        <li>Data updates roughly every hour based on call activity reported to FiveCalls.org.</li>
+        <li>Hover over the chart to see detailed hourly call volumes per category.</li>
+        <li>Use the dropdowns to view different topics and time windows: 48 hours, 1 week, or 1 month.</li>
+        <li><strong>Top 5 Categories</strong> and <strong>All Categories</strong> charts use a <em>logarithmic scale</em> to show trends across varying call volumes.</li>
+        <li>Individual category charts use a <em>linear scale</em> for better resolution within each issue.</li>
+        <li>Charts are built using time-differenced cumulative call counts by category, aggregated hourly, at the end of each hour.</li>
+        <li>Times shown are in Eastern Time (ET) and rounded to the hour.</li>
+        <li>This is a static dashboard and does not reflect live call updates until the next scheduled data refresh.</li>
+      </ul>
+
+      <h2 class="text-2xl font-bold mb-4">How to use this site:</h2>
+      <ol class="list-decimal list-inside mb-4">
+        <li>If you are already calling about an issue, make your call a +1, by including a trending topic.</li>
+        <li>Select a category and time range to see what people are calling about right now.</li>
+        <li>Visit 5Calls.org to get a script you can use when you call your representative about the topic.</li>
+        <li>Even if there's not something you want to call about because of your own interests, check back daily to make additional calls. It's like a different type of donation.</li>
+      </ol>
+    </br>
+      <strong>You just multiplied your impact!</strong>
+
+      <div class="text-sm text-gray-600 pt-4 space-y-2">
+        <p><strong>Last Updated:</strong> <span id="lastUpdated">Loading...</span></p>
+        <p>Call volume data courtesy of <a href="https://fivecalls.org" class="underline text-blue-600">FiveCalls.org</a>.</p>
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    let dataCache = {};
+
+    async function loadData() {
+      const updatedAt = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
+      document.getElementById("lastUpdated").textContent = updatedAt;
+      const response = await fetch("site_data/chart_data.json");
+      dataCache = await response.json();
+
+      const categories = new Set();
+      for (const key of Object.keys(dataCache)) {
+        const match = key.match(/^(.*?)_(48h|1w|1mo)$/);
+        if (match) categories.add(match[1]);
+      }
+
+      const categorySelect = document.getElementById("categorySelect");
+      categorySelect.innerHTML = "";
+      Array.from(categories).sort().forEach(cat => {
+        const opt = document.createElement("option");
+        opt.value = cat;
+        opt.textContent = cat === "overall" ? "All Categories" :
+                          cat === "top5" ? "Top 5 Categories" :
+                          cat.replace(/_/g, " ");
+        categorySelect.appendChild(opt);
+      });
+
+      categorySelect.value = "top5";
+      document.getElementById("timeSelect").value = "48h";
+
+      updateView();
+    }
+
+    function updateView() {
+      const category = document.getElementById("categorySelect").value;
+      const time = document.getElementById("timeSelect").value;
+      const key = `${category}_${time}`;
+      const records = dataCache[key] || [];
+
+      if (records.length === 0) {
+        document.getElementById("chart").innerHTML = "<p class='text-red-600'>No data available.</p>";
+        document.getElementById("table").innerHTML = "";
+        return;
+      }
+
+      const traces = {};
+      records.forEach(r => {
+        const cat = r.category || category;
+        if (!traces[cat]) {
+          traces[cat] = { x: [], y: [], name: cat, type: "scatter", mode: "lines" };
+        }
+        const easternHour = new Date(r.hour).toLocaleString("en-US", {
+          timeZone: "America/New_York",
+          hour: "numeric",
+          minute: "2-digit",
+          month: "short",
+          day: "numeric"
+        });
+        traces[cat].x.push(easternHour);
+        traces[cat].y.push(r.hourly_calls);
+      });
+
+      const isLogScale = category === "overall" || category === "top5";
+      const titleCat = category === "overall" ? "All Categories (log scale)" :
+                       category === "top5" ? "Top 5 Categories (log scale)" :
+                       category.replace(/_/g, " ");
+
+      Plotly.newPlot("chart", Object.values(traces), {
+        title: `Calls by Hour: ${titleCat} (${time})`,
+        yaxis: isLogScale ? {
+          type: 'log',
+          tickformat: '~s'
+        } : {
+          type: 'linear'
+        },
+        margin: { b: 120 }
+      });
+
+      let tableHtml = '<table class="table-auto border-collapse w-full"><thead><tr><th class="border px-2">Hour (Eastern Time)</th><th class="border px-2">Category</th><th class="border px-2 text-right">Hourly Calls</th></tr></thead><tbody>';
+      records.forEach(r => {
+        const easternHour = new Date(r.hour).toLocaleString("en-US", {
+          timeZone: "America/New_York",
+          hour: "numeric",
+          minute: "2-digit",
+          month: "short",
+          day: "numeric"
+        });
+        tableHtml += `<tr><td class="border px-2">${easternHour}</td><td class="border px-2">${r.category}</td><td class="border px-2 text-right">${r.hourly_calls}</td></tr>`;
+      });
+      tableHtml += '</tbody></table>';
+      document.getElementById("table").innerHTML = tableHtml;
+    }
+
+    document.getElementById("categorySelect").addEventListener("change", updateView);
+    document.getElementById("timeSelect").addEventListener("change", updateView);
+    loadData();
+  </script>
+</body>
+</html>

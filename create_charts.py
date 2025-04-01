@@ -31,64 +31,35 @@ def prepare_data(df, hours):
     grouped['hourly_calls'] = grouped.groupby('category')['calls'].diff().fillna(0)
     return grouped
 
-def render_page(chart_html, table_html, filename, dropdown_html):
-    chart_template = env.get_template("chart_page.html")
-    full_html = chart_template.render(chart=chart_html, table=table_html, dropdown=dropdown_html)
-    with open(f"active_charts/{filename}", "w") as f:
-        f.write(full_html)
-
 def generate_all():
-    os.makedirs('active_charts', exist_ok=True)
+    os.makedirs('site_data', exist_ok=True)
     df = load_data()
     time_ranges = {"48h": 48, "1w": 168, "1mo": 720}
-    page_data = []
+    combined_json = {}
 
-    # Step 1: collect all page info first
     for label, hours in time_ranges.items():
         data = prepare_data(df.copy(), hours)
         categories = data['category'].unique()
-
-        # Overall chart
-        page_data.append({
-            'title': f"Hourly Calls by Category ({label})",
-            'data': data,
-            'filename': f"overall_{label}.html",
-            'mode': 'overall'
-        })
+        data['hour'] = data['hour'].astype(str)
 
         # Top 5 chart
         top5 = data.groupby('category')['hourly_calls'].sum().sort_values(ascending=False).head(5).index
-        top5_data = data[data['category'].isin(top5)]
-        page_data.append({
-            'title': f"Hourly Calls: Top 5 Categories ({label})",
-            'data': top5_data,
-            'filename': f"top5_{label}.html",
-            'mode': 'top5'
-        })
+        top5_data = data[data['category'].isin(top5)].copy()
+        top5_data['hour'] = top5_data['hour'].astype(str)
+        combined_json[f"top5_{label}"] = top5_data.to_dict(orient='records')
+
+        # Overall chart
+        combined_json[f"overall_{label}"] = data.to_dict(orient='records')
 
         # Per-category charts
         for cat in categories:
-            cat_data = data[data['category'] == cat]
-            page_data.append({
-                'title': f"Hourly Calls: {cat} ({label})",
-                'data': cat_data,
-                'filename': f"category_{cat.replace(' ', '_')}_{label}.html",
-                'mode': 'category'
-            })
+            key = f"{cat.replace(' ', '_')}_{label}"
+            cat_data = data[data['category'] == cat].copy()
+            cat_data['hour'] = cat_data['hour'].astype(str)
+            combined_json[key] = cat_data.to_dict(orient='records')
 
-    # Step 2: build dropdown HTML once
-    links = [p['filename'] for p in page_data]
-    dropdown_template = env.get_template("dropdown.html")
-    dropdown_html = dropdown_template.render(links=links)
-
-    # Step 3: render all pages using full dropdown
-    for p in page_data:
-        fig = px.line(p['data'], x='hour', y='hourly_calls', color='category' if p['mode'] != 'category' else None,
-                      title=p['title'], log_y=True,
-                      labels={'hour': 'Time (Hourly)', 'hourly_calls': 'Calls this Hour'})
-        chart_html = fig.to_html(full_html=False, include_plotlyjs='cdn')
-        table_html = p['data'].to_html(index=False, classes='table table-striped')
-        render_page(chart_html, table_html, p['filename'], dropdown_html)
+    with open("site_data/chart_data.json", "w") as f:
+        json.dump(combined_json, f, indent=2)
 
 if __name__ == "__main__":
     generate_all()
