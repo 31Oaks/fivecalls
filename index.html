@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FiveCalls Dashboard</title>
+  <title>Pile on for democracy</title>
   <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-gradient-to-br from-gray-50 to-gray-100 text-gray-800">
   <header class="w-full text-center mb-4">
+    <div class="pt-6">
     <h1 class="text-4xl font-extrabold text-blue-800 drop-shadow">
       Multiply Your Impact
     </h1>
+    </div>
   </header>
   <div class="flex flex-col lg:flex-row gap-4 p-4 lg:p-6">
     <!-- Middle column (main content) -->
     <main class="w-full lg:w-[70%] bg-white rounded-xl shadow-md p-6">
-      <h1 class="text-2xl font-bold mb-4">Help build a democracy snowball</h1>
+      <h1 class="text-2xl font-bold mb-4">Pile on for democracy</h1>
       <p class="mb-4">
         Inefficient communication is one of the biggest challenges for collective action. If organizers could get the word out instantly, to everyone, about an action taking place, the impact would be greatly increased. Of course, we aren't all connected to one person or group who can mobilize everyone, all at once. 
         <br><br>
@@ -41,12 +44,26 @@
       </div>
 
       <div id="chart" class="mb-6" style="height: 600px;"></div>
-      <div class="mt-4 flex flex-wrap gap-2">
-        <button onclick="shareTo('twitter')" class="px-3 py-2 text-sm bg-blue-500 text-white rounded hover:bg-blue-600">Share on Twitter</button>
-        <button onclick="shareTo('facebook')" class="px-3 py-2 text-sm bg-blue-700 text-white rounded hover:bg-blue-800">Share on Facebook</button>
-        <button onclick="shareTo('copy')" class="px-3 py-2 text-sm bg-gray-300 text-gray-800 rounded hover:bg-gray-400">Copy Link</button>
+      <div class="mt-4 mb-6 flex flex-wrap justify-center gap-2">
+        <button onclick="shareTo('twitter')" class="flex items-center gap-1 px-3 py-2 text-sm bg-blue-500 text-white rounded hover:bg-blue-600">
+          <i data-lucide="twitter" class="w-4 h-4"></i> Twitter
+        </button>
+        <button onclick="shareTo('facebook')" class="flex items-center gap-1 px-3 py-2 text-sm bg-blue-700 text-white rounded hover:bg-blue-800">
+          <i data-lucide="facebook" class="w-4 h-4"></i> Facebook
+        </button>
+        <button onclick="shareTo('bluesky')" class="flex items-center gap-1 px-3 py-2 text-sm bg-blue-400 text-white rounded hover:bg-blue-500">
+          <i data-lucide="send" class="w-4 h-4"></i> Bluesky
+        </button>
+        <a id="whatsapp-share" target="_blank" class="flex items-center gap-1 px-3 py-2 text-sm bg-green-500 text-white rounded hover:bg-green-600">
+          <i data-lucide="phone" class="w-4 h-4"></i> WhatsApp
+        </a>
+        <a id="telegram-share" target="_blank" class="flex items-center gap-1 px-3 py-2 text-sm bg-sky-500 text-white rounded hover:bg-sky-600">
+          <i data-lucide="paperclip" class="w-4 h-4"></i> Telegram
+        </a>
+        <button onclick="shareTo('copy')" class="flex items-center gap-1 px-3 py-2 text-sm bg-gray-300 text-gray-800 rounded hover:bg-gray-400">
+          <i data-lucide="clipboard" class="w-4 h-4"></i> Copy Link
+        </button>
       </div>
-      </br>
       <div id="table" class="overflow-x-auto"></div>
     </main>
 
@@ -178,14 +195,34 @@
     function shareTo(platform) {
       const url = window.location.href;
       const text = encodeURIComponent("Check out trending civic call data from FiveCalls.org");
-      if (platform === 'twitter') {
-        window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank');
-      } else if (platform === 'facebook') {
-        window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
-      } else if (platform === 'copy') {
-        navigator.clipboard.writeText(url).then(() => alert('Link copied to clipboard!'));
+
+      let shareUrl = "";
+
+      switch (platform) {
+        case 'twitter':
+          shareUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+          break;
+        case 'facebook':
+          shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+          break;
+        case 'bluesky':
+          shareUrl = `https://bsky.app/intent/compose?text=${text}%20${url}`;
+          break;
+        case 'copy':
+          navigator.clipboard.writeText(url).then(() => alert('Link copied to clipboard!'));
+          return;
+      }
+
+      if (shareUrl) {
+        window.open(shareUrl, '_blank');
       }
     }
+
+    // Dynamically generate links for WhatsApp and Telegram
+    const encodedMessage = encodeURIComponent("Check out trending civic call data from FiveCalls.org " + window.location.href);
+    document.getElementById("whatsapp-share").href = `https://wa.me/?text=${encodedMessage}`;
+    document.getElementById("telegram-share").href = `https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${encodedMessage}`;
+    lucide.createIcons();
 
     document.getElementById("categorySelect").addEventListener("change", updateView);
     document.getElementById("timeSelect").addEventListener("change", updateView);
