@@ -32,7 +32,7 @@ def parse_json_to_db(data, utc_time, db_name="fivecalls.db", table_name="flat_da
         if path == 'data/':
             conn.execute(f"""
                 DELETE FROM {table_name}
-                WHERE datetime(created_at) < datetime('now', '-1 month', '-1 day')
+                WHERE datetime(inserted_at_utc) < datetime('now', '-1 month', '-1 day')
             """)
 
         print(f"✅ Appended {len(df)} records to {table_name} in {db_name_tmp}.")
