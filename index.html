@@ -71,7 +71,7 @@
     <aside class="w-full lg:w-[30%] space-y-4 bg-white rounded-xl shadow-md p-4">
       <h2 class="text-xl font-semibold mb-2">Notes for Use</h2>
       <ul class="list-disc list-inside text-sm">
-        <li>Data updates roughly every hour based on call activity reported to FiveCalls.org.</li>
+        <li>Data updates roughly every hour based on call activity reported to 5Calls.org.</li>
         <li>Hover over the chart to see detailed hourly call volumes per category.</li>
         <li>Use the dropdowns to view different topics and time windows: 48 hours, 1 week, or 1 month.</li>
         <li><strong>Top 5 Categories</strong> and <strong>All Categories</strong> charts use a <em>logarithmic scale</em> to show trends across varying call volumes.</li>
@@ -94,7 +94,7 @@
 
       <h3 class="text-lg font-semibold mt-4">Relevant Links</h3>
       <ul class="list-disc list-inside text-sm">
-        <li><a href="https://fivecalls.org" class="text-blue-600 underline">5 Calls</a></li>
+        <li><a href="https://5calls.org" class="text-blue-600 underline">5 Calls</a></li>
         <li><a href="https://5calls.org/how" class="text-blue-600 underline">How 5 Calls Works</a></li>
       </ul>
     </aside>
@@ -194,7 +194,7 @@
 
     function shareTo(platform) {
       const url = window.location.href;
-      const text = encodeURIComponent("Check out trending civic call data from FiveCalls.org");
+      const text = encodeURIComponent("Check out trending civic call data from 5Calls.org");
 
       let shareUrl = "";
 
@@ -206,7 +206,7 @@
           shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
           break;
         case 'bluesky':
-          shareUrl = `https://bsky.app/intent/compose?text=${text}%20${url}`;
+          shareUrl = `https://bsky.app/compose?text=${text}%20${url}`;
           break;
         case 'copy':
           navigator.clipboard.writeText(url).then(() => alert('Link copied to clipboard!'));
@@ -219,7 +219,7 @@
     }
 
     // Dynamically generate links for WhatsApp and Telegram
-    const encodedMessage = encodeURIComponent("Check out trending civic call data from FiveCalls.org " + window.location.href);
+    const encodedMessage = encodeURIComponent("Check out trending civic engagement call data from 5Calls.org " + window.location.href);
     document.getElementById("whatsapp-share").href = `https://wa.me/?text=${encodedMessage}`;
     document.getElementById("telegram-share").href = `https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${encodedMessage}`;
     lucide.createIcons();
