@@ -23,12 +23,17 @@ def load_data():
 
 def prepare_data(df, hours):
     cutoff = pd.Timestamp.now(timezone.utc) - pd.Timedelta(hours=hours)
-    df = df[df['inserted_at_utc'] >= cutoff]
+
+    extended_cutoff = cutoff - pd.Timedelta(hours=1)
+    df = df[df['inserted_at_utc'] >= extended_cutoff]
+
     df['hour'] = df['inserted_at_utc'].dt.floor('h')
     grouped = df.groupby(['hour', 'category'])['calls'].max().reset_index()
     grouped = grouped.sort_values(by=['category', 'hour'])
     grouped['calls'] = grouped.groupby('category')['calls'].ffill()
     grouped['hourly_calls'] = grouped.groupby('category')['calls'].diff().fillna(0)
+
+    grouped = grouped[grouped['hour'] >= cutoff]
     return grouped
 
 def generate_all():
