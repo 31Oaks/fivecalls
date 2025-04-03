@@ -1,12 +1,6 @@
 {
   "top5_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Budget",
-      "calls": 94479,
-      "hourly_calls": 24.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Budget",
       "calls": 94501,
@@ -283,10 +277,10 @@
       "hourly_calls": 515.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Civil Rights",
-      "calls": 98779,
-      "hourly_calls": 224.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Budget",
+      "calls": 101388,
+      "hourly_calls": 604.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -565,10 +559,10 @@
       "hourly_calls": 72.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Immigration",
-      "calls": 25861,
-      "hourly_calls": 167.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Civil Rights",
+      "calls": 102780,
+      "hourly_calls": 73.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -847,10 +841,10 @@
       "hourly_calls": 69.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "National Security",
-      "calls": 111378,
-      "hourly_calls": 271.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Immigration",
+      "calls": 30113,
+      "hourly_calls": 95.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -1129,10 +1123,10 @@
       "hourly_calls": 104.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Voter Rights",
-      "calls": 118899,
-      "hourly_calls": 398.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "National Security",
+      "calls": 116608,
+      "hourly_calls": 65.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -1409,16 +1403,16 @@
       "category": "Voter Rights",
       "calls": 124050,
       "hourly_calls": 102.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Voter Rights",
+      "calls": 124162,
+      "hourly_calls": 112.0
     }
   ],
   "overall_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Budget",
-      "calls": 94479,
-      "hourly_calls": 24.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Budget",
       "calls": 94501,
@@ -1695,10 +1689,10 @@
       "hourly_calls": 515.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Civil Rights",
-      "calls": 98779,
-      "hourly_calls": 224.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Budget",
+      "calls": 101388,
+      "hourly_calls": 604.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -1977,10 +1971,10 @@
       "hourly_calls": 72.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Consumer Protection",
-      "calls": 52399,
-      "hourly_calls": 1.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Civil Rights",
+      "calls": 102780,
+      "hourly_calls": 73.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -2259,10 +2253,10 @@
       "hourly_calls": 0.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Digital Rights",
-      "calls": 4719,
-      "hourly_calls": 28.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Consumer Protection",
+      "calls": 52542,
+      "hourly_calls": 8.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -2541,10 +2535,10 @@
       "hourly_calls": 9.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Education",
-      "calls": 234883,
-      "hourly_calls": 8.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Digital Rights",
+      "calls": 5068,
+      "hourly_calls": 5.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -2823,10 +2817,10 @@
       "hourly_calls": 16.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Environment",
-      "calls": 43731,
-      "hourly_calls": 19.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Education",
+      "calls": 235295,
+      "hourly_calls": 15.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -3105,10 +3099,10 @@
       "hourly_calls": 15.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Foreign Affairs",
-      "calls": 229709,
-      "hourly_calls": 7.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Environment",
+      "calls": 44099,
+      "hourly_calls": 1.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -3387,10 +3381,10 @@
       "hourly_calls": 4.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Government Oversight",
-      "calls": 508468,
-      "hourly_calls": 8.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Foreign Affairs",
+      "calls": 229886,
+      "hourly_calls": 3.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -3669,10 +3663,10 @@
       "hourly_calls": 10.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Gun Safety",
-      "calls": 33225,
-      "hourly_calls": 0.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Government Oversight",
+      "calls": 508825,
+      "hourly_calls": 4.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -3951,9 +3945,9 @@
       "hourly_calls": 0.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Healthcare",
-      "calls": 62770,
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Gun Safety",
+      "calls": 33369,
       "hourly_calls": 12.0
     },
     {
@@ -4233,10 +4227,10 @@
       "hourly_calls": 4.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Immigration",
-      "calls": 25861,
-      "hourly_calls": 167.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Healthcare",
+      "calls": 63150,
+      "hourly_calls": 8.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -4515,10 +4509,10 @@
       "hourly_calls": 69.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "LGBTQ+",
-      "calls": 47168,
-      "hourly_calls": 11.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Immigration",
+      "calls": 30113,
+      "hourly_calls": 95.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -4797,10 +4791,10 @@
       "hourly_calls": 2.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "National Security",
-      "calls": 111378,
-      "hourly_calls": 271.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "LGBTQ+",
+      "calls": 47369,
+      "hourly_calls": 6.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -5079,10 +5073,10 @@
       "hourly_calls": 104.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Nominations",
-      "calls": 12525,
-      "hourly_calls": 2.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "National Security",
+      "calls": 116608,
+      "hourly_calls": 65.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -5361,10 +5355,10 @@
       "hourly_calls": 148.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Social Safety Net",
-      "calls": 111843,
-      "hourly_calls": 24.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Nominations",
+      "calls": 14372,
+      "hourly_calls": 129.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -5643,10 +5637,10 @@
       "hourly_calls": 11.0
     },
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Voter Rights",
-      "calls": 118899,
-      "hourly_calls": 398.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Social Safety Net",
+      "calls": 112331,
+      "hourly_calls": 0.0
     },
     {
       "hour": "2025-04-01 20:00:00+00:00",
@@ -5923,16 +5917,16 @@
       "category": "Voter Rights",
       "calls": 124050,
       "hourly_calls": 102.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Voter Rights",
+      "calls": 124162,
+      "hourly_calls": 112.0
     }
   ],
   "Budget_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Budget",
-      "calls": 94479,
-      "hourly_calls": 24.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Budget",
       "calls": 94501,
@@ -6207,16 +6201,16 @@
       "category": "Budget",
       "calls": 100784,
       "hourly_calls": 515.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Budget",
+      "calls": 101388,
+      "hourly_calls": 604.0
     }
   ],
   "Civil_Rights_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Civil Rights",
-      "calls": 98779,
-      "hourly_calls": 224.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Civil Rights",
       "calls": 98949,
@@ -6491,16 +6485,16 @@
       "category": "Civil Rights",
       "calls": 102707,
       "hourly_calls": 72.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Civil Rights",
+      "calls": 102780,
+      "hourly_calls": 73.0
     }
   ],
   "Consumer_Protection_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Consumer Protection",
-      "calls": 52399,
-      "hourly_calls": 1.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Consumer Protection",
       "calls": 52400,
@@ -6775,16 +6769,16 @@
       "category": "Consumer Protection",
       "calls": 52534,
       "hourly_calls": 0.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Consumer Protection",
+      "calls": 52542,
+      "hourly_calls": 8.0
     }
   ],
   "Digital_Rights_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Digital Rights",
-      "calls": 4719,
-      "hourly_calls": 28.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Digital Rights",
       "calls": 4755,
@@ -7059,16 +7053,16 @@
       "category": "Digital Rights",
       "calls": 5063,
       "hourly_calls": 9.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Digital Rights",
+      "calls": 5068,
+      "hourly_calls": 5.0
     }
   ],
   "Education_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Education",
-      "calls": 234883,
-      "hourly_calls": 8.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Education",
       "calls": 234902,
@@ -7343,16 +7337,16 @@
       "category": "Education",
       "calls": 235280,
       "hourly_calls": 16.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Education",
+      "calls": 235295,
+      "hourly_calls": 15.0
     }
   ],
   "Environment_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Environment",
-      "calls": 43731,
-      "hourly_calls": 19.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Environment",
       "calls": 43743,
@@ -7627,16 +7621,16 @@
       "category": "Environment",
       "calls": 44098,
       "hourly_calls": 15.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Environment",
+      "calls": 44099,
+      "hourly_calls": 1.0
     }
   ],
   "Foreign_Affairs_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Foreign Affairs",
-      "calls": 229709,
-      "hourly_calls": 7.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Foreign Affairs",
       "calls": 229713,
@@ -7911,16 +7905,16 @@
       "category": "Foreign Affairs",
       "calls": 229883,
       "hourly_calls": 4.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Foreign Affairs",
+      "calls": 229886,
+      "hourly_calls": 3.0
     }
   ],
   "Government_Oversight_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Government Oversight",
-      "calls": 508468,
-      "hourly_calls": 8.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Government Oversight",
       "calls": 508482,
@@ -8195,16 +8189,16 @@
       "category": "Government Oversight",
       "calls": 508821,
       "hourly_calls": 10.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Government Oversight",
+      "calls": 508825,
+      "hourly_calls": 4.0
     }
   ],
   "Gun_Safety_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Gun Safety",
-      "calls": 33225,
-      "hourly_calls": 0.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Gun Safety",
       "calls": 33227,
@@ -8479,16 +8473,16 @@
       "category": "Gun Safety",
       "calls": 33357,
       "hourly_calls": 0.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Gun Safety",
+      "calls": 33369,
+      "hourly_calls": 12.0
     }
   ],
   "Healthcare_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Healthcare",
-      "calls": 62770,
-      "hourly_calls": 12.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Healthcare",
       "calls": 62784,
@@ -8763,16 +8757,16 @@
       "category": "Healthcare",
       "calls": 63142,
       "hourly_calls": 4.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Healthcare",
+      "calls": 63150,
+      "hourly_calls": 8.0
     }
   ],
   "Immigration_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Immigration",
-      "calls": 25861,
-      "hourly_calls": 167.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Immigration",
       "calls": 26066,
@@ -9047,16 +9041,16 @@
       "category": "Immigration",
       "calls": 30018,
       "hourly_calls": 69.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Immigration",
+      "calls": 30113,
+      "hourly_calls": 95.0
     }
   ],
   "LGBTQ+_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "LGBTQ+",
-      "calls": 47168,
-      "hourly_calls": 11.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "LGBTQ+",
       "calls": 47173,
@@ -9331,16 +9325,16 @@
       "category": "LGBTQ+",
       "calls": 47363,
       "hourly_calls": 2.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "LGBTQ+",
+      "calls": 47369,
+      "hourly_calls": 6.0
     }
   ],
   "National_Security_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "National Security",
-      "calls": 111378,
-      "hourly_calls": 271.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "National Security",
       "calls": 111708,
@@ -9615,16 +9609,16 @@
       "category": "National Security",
       "calls": 116543,
       "hourly_calls": 104.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "National Security",
+      "calls": 116608,
+      "hourly_calls": 65.0
     }
   ],
   "Nominations_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Nominations",
-      "calls": 12525,
-      "hourly_calls": 2.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Nominations",
       "calls": 12533,
@@ -9899,16 +9893,16 @@
       "category": "Nominations",
       "calls": 14243,
       "hourly_calls": 148.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Nominations",
+      "calls": 14372,
+      "hourly_calls": 129.0
     }
   ],
   "Social_Safety_Net_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Social Safety Net",
-      "calls": 111843,
-      "hourly_calls": 24.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Social Safety Net",
       "calls": 111854,
@@ -10183,16 +10177,16 @@
       "category": "Social Safety Net",
       "calls": 112331,
       "hourly_calls": 11.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Social Safety Net",
+      "calls": 112331,
+      "hourly_calls": 0.0
     }
   ],
   "Voter_Rights_48h": [
     {
-      "hour": "2025-04-01 19:00:00+00:00",
-      "category": "Voter Rights",
-      "calls": 118899,
-      "hourly_calls": 398.0
-    },
-    {
       "hour": "2025-04-01 20:00:00+00:00",
       "category": "Voter Rights",
       "calls": 119297,
@@ -10467,16 +10461,16 @@
       "category": "Voter Rights",
       "calls": 124050,
       "hourly_calls": 102.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Voter Rights",
+      "calls": 124162,
+      "hourly_calls": 112.0
     }
   ],
   "top5_1w": [
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Budget",
-      "calls": 92712,
-      "hourly_calls": 64.0
-    },
-    {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Budget",
       "calls": 92757,
@@ -11467,10 +11461,10 @@
       "hourly_calls": 515.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Civil Rights",
-      "calls": 80936,
-      "hourly_calls": 550.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Budget",
+      "calls": 101388,
+      "hourly_calls": 604.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -12463,10 +12457,10 @@
       "hourly_calls": 72.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Immigration",
-      "calls": 19775,
-      "hourly_calls": 119.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Civil Rights",
+      "calls": 102780,
+      "hourly_calls": 73.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -13459,10 +13453,10 @@
       "hourly_calls": 69.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "National Security",
-      "calls": 84416,
-      "hourly_calls": 1326.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Immigration",
+      "calls": 30113,
+      "hourly_calls": 95.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -14455,10 +14449,10 @@
       "hourly_calls": 104.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Voter Rights",
-      "calls": 105706,
-      "hourly_calls": 31.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "National Security",
+      "calls": 116608,
+      "hourly_calls": 65.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -15449,16 +15443,16 @@
       "category": "Voter Rights",
       "calls": 124050,
       "hourly_calls": 102.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Voter Rights",
+      "calls": 124162,
+      "hourly_calls": 112.0
     }
   ],
   "overall_1w": [
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Budget",
-      "calls": 92712,
-      "hourly_calls": 64.0
-    },
-    {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Budget",
       "calls": 92757,
@@ -16449,10 +16443,10 @@
       "hourly_calls": 515.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Civil Rights",
-      "calls": 80936,
-      "hourly_calls": 550.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Budget",
+      "calls": 101388,
+      "hourly_calls": 604.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -17445,10 +17439,10 @@
       "hourly_calls": 72.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Consumer Protection",
-      "calls": 52186,
-      "hourly_calls": 5.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Civil Rights",
+      "calls": 102780,
+      "hourly_calls": 73.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -18441,10 +18435,10 @@
       "hourly_calls": 0.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Digital Rights",
-      "calls": 2374,
-      "hourly_calls": 63.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Consumer Protection",
+      "calls": 52542,
+      "hourly_calls": 8.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -19437,10 +19431,10 @@
       "hourly_calls": 9.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Education",
-      "calls": 232688,
-      "hourly_calls": 69.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Digital Rights",
+      "calls": 5068,
+      "hourly_calls": 5.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -20433,10 +20427,10 @@
       "hourly_calls": 16.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Environment",
-      "calls": 43179,
-      "hourly_calls": 12.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Education",
+      "calls": 235295,
+      "hourly_calls": 15.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -21429,9 +21423,9 @@
       "hourly_calls": 15.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Foreign Affairs",
-      "calls": 229345,
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Environment",
+      "calls": 44099,
       "hourly_calls": 1.0
     },
     {
@@ -22425,10 +22419,10 @@
       "hourly_calls": 4.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Government Oversight",
-      "calls": 506203,
-      "hourly_calls": 54.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Foreign Affairs",
+      "calls": 229886,
+      "hourly_calls": 3.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -23421,10 +23415,10 @@
       "hourly_calls": 10.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Gun Safety",
-      "calls": 33039,
-      "hourly_calls": 3.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Government Oversight",
+      "calls": 508825,
+      "hourly_calls": 4.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -24417,10 +24411,10 @@
       "hourly_calls": 0.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Healthcare",
-      "calls": 62172,
-      "hourly_calls": 1.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Gun Safety",
+      "calls": 33369,
+      "hourly_calls": 12.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -25413,10 +25407,10 @@
       "hourly_calls": 4.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Immigration",
-      "calls": 19775,
-      "hourly_calls": 119.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Healthcare",
+      "calls": 63150,
+      "hourly_calls": 8.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -26409,10 +26403,10 @@
       "hourly_calls": 69.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "LGBTQ+",
-      "calls": 46536,
-      "hourly_calls": 22.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Immigration",
+      "calls": 30113,
+      "hourly_calls": 95.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -27405,10 +27399,10 @@
       "hourly_calls": 2.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "National Security",
-      "calls": 84416,
-      "hourly_calls": 1326.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "LGBTQ+",
+      "calls": 47369,
+      "hourly_calls": 6.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -28401,10 +28395,10 @@
       "hourly_calls": 104.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Nominations",
-      "calls": 12173,
-      "hourly_calls": 9.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "National Security",
+      "calls": 116608,
+      "hourly_calls": 65.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -29397,10 +29391,10 @@
       "hourly_calls": 148.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Social Safety Net",
-      "calls": 107981,
-      "hourly_calls": 131.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Nominations",
+      "calls": 14372,
+      "hourly_calls": 129.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -30393,10 +30387,10 @@
       "hourly_calls": 11.0
     },
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Voter Rights",
-      "calls": 105706,
-      "hourly_calls": 31.0
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Social Safety Net",
+      "calls": 112331,
+      "hourly_calls": 0.0
     },
     {
       "hour": "2025-03-27 20:00:00+00:00",
@@ -31387,16 +31381,16 @@
       "category": "Voter Rights",
       "calls": 124050,
       "hourly_calls": 102.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Voter Rights",
+      "calls": 124162,
+      "hourly_calls": 112.0
     }
   ],
   "Budget_1w": [
     {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Budget",
-      "calls": 92712,
-      "hourly_calls": 64.0
-    },
-    {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Budget",
       "calls": 92757,
@@ -32385,15 +32379,15 @@
       "category": "Budget",
       "calls": 100784,
       "hourly_calls": 515.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Budget",
+      "calls": 101388,
+      "hourly_calls": 604.0
     }
   ],
   "Civil_Rights_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Civil Rights",
-      "calls": 80936,
-      "hourly_calls": 550.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Civil Rights",
@@ -33383,15 +33377,15 @@
       "category": "Civil Rights",
       "calls": 102707,
       "hourly_calls": 72.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Civil Rights",
+      "calls": 102780,
+      "hourly_calls": 73.0
     }
   ],
   "Consumer_Protection_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Consumer Protection",
-      "calls": 52186,
-      "hourly_calls": 5.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Consumer Protection",
@@ -34381,15 +34375,15 @@
       "category": "Consumer Protection",
       "calls": 52534,
       "hourly_calls": 0.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Consumer Protection",
+      "calls": 52542,
+      "hourly_calls": 8.0
     }
   ],
   "Digital_Rights_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Digital Rights",
-      "calls": 2374,
-      "hourly_calls": 63.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Digital Rights",
@@ -35379,15 +35373,15 @@
       "category": "Digital Rights",
       "calls": 5063,
       "hourly_calls": 9.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Digital Rights",
+      "calls": 5068,
+      "hourly_calls": 5.0
     }
   ],
   "Education_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Education",
-      "calls": 232688,
-      "hourly_calls": 69.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Education",
@@ -36377,15 +36371,15 @@
       "category": "Education",
       "calls": 235280,
       "hourly_calls": 16.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Education",
+      "calls": 235295,
+      "hourly_calls": 15.0
     }
   ],
   "Environment_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Environment",
-      "calls": 43179,
-      "hourly_calls": 12.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Environment",
@@ -37375,15 +37369,15 @@
       "category": "Environment",
       "calls": 44098,
       "hourly_calls": 15.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Environment",
+      "calls": 44099,
+      "hourly_calls": 1.0
     }
   ],
   "Foreign_Affairs_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Foreign Affairs",
-      "calls": 229345,
-      "hourly_calls": 1.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Foreign Affairs",
@@ -38373,15 +38367,15 @@
       "category": "Foreign Affairs",
       "calls": 229883,
       "hourly_calls": 4.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Foreign Affairs",
+      "calls": 229886,
+      "hourly_calls": 3.0
     }
   ],
   "Government_Oversight_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Government Oversight",
-      "calls": 506203,
-      "hourly_calls": 54.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Government Oversight",
@@ -39371,15 +39365,15 @@
       "category": "Government Oversight",
       "calls": 508821,
       "hourly_calls": 10.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Government Oversight",
+      "calls": 508825,
+      "hourly_calls": 4.0
     }
   ],
   "Gun_Safety_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Gun Safety",
-      "calls": 33039,
-      "hourly_calls": 3.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Gun Safety",
@@ -40369,15 +40363,15 @@
       "category": "Gun Safety",
       "calls": 33357,
       "hourly_calls": 0.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Gun Safety",
+      "calls": 33369,
+      "hourly_calls": 12.0
     }
   ],
   "Healthcare_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Healthcare",
-      "calls": 62172,
-      "hourly_calls": 1.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Healthcare",
@@ -41367,15 +41361,15 @@
       "category": "Healthcare",
       "calls": 63142,
       "hourly_calls": 4.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Healthcare",
+      "calls": 63150,
+      "hourly_calls": 8.0
     }
   ],
   "Immigration_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Immigration",
-      "calls": 19775,
-      "hourly_calls": 119.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Immigration",
@@ -42365,15 +42359,15 @@
       "category": "Immigration",
       "calls": 30018,
       "hourly_calls": 69.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Immigration",
+      "calls": 30113,
+      "hourly_calls": 95.0
     }
   ],
   "LGBTQ+_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "LGBTQ+",
-      "calls": 46536,
-      "hourly_calls": 22.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "LGBTQ+",
@@ -43363,15 +43357,15 @@
       "category": "LGBTQ+",
       "calls": 47363,
       "hourly_calls": 2.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "LGBTQ+",
+      "calls": 47369,
+      "hourly_calls": 6.0
     }
   ],
   "National_Security_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "National Security",
-      "calls": 84416,
-      "hourly_calls": 1326.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "National Security",
@@ -44361,15 +44355,15 @@
       "category": "National Security",
       "calls": 116543,
       "hourly_calls": 104.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "National Security",
+      "calls": 116608,
+      "hourly_calls": 65.0
     }
   ],
   "Nominations_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Nominations",
-      "calls": 12173,
-      "hourly_calls": 9.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Nominations",
@@ -45359,15 +45353,15 @@
       "category": "Nominations",
       "calls": 14243,
       "hourly_calls": 148.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Nominations",
+      "calls": 14372,
+      "hourly_calls": 129.0
     }
   ],
   "Social_Safety_Net_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Social Safety Net",
-      "calls": 107981,
-      "hourly_calls": 131.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Social Safety Net",
@@ -46357,15 +46351,15 @@
       "category": "Social Safety Net",
       "calls": 112331,
       "hourly_calls": 11.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Social Safety Net",
+      "calls": 112331,
+      "hourly_calls": 0.0
     }
   ],
   "Voter_Rights_1w": [
-    {
-      "hour": "2025-03-27 19:00:00+00:00",
-      "category": "Voter Rights",
-      "calls": 105706,
-      "hourly_calls": 31.0
-    },
     {
       "hour": "2025-03-27 20:00:00+00:00",
       "category": "Voter Rights",
@@ -47355,6 +47349,12 @@
       "category": "Voter Rights",
       "calls": 124050,
       "hourly_calls": 102.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Voter Rights",
+      "calls": 124162,
+      "hourly_calls": 112.0
     }
   ],
   "top5_1mo": [
@@ -48493,6 +48493,12 @@
       "hourly_calls": 515.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Budget",
+      "calls": 101388,
+      "hourly_calls": 604.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "Civil Rights",
       "calls": 75068,
@@ -49625,6 +49631,12 @@
       "category": "Civil Rights",
       "calls": 102707,
       "hourly_calls": 72.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Civil Rights",
+      "calls": 102780,
+      "hourly_calls": 73.0
     },
     {
       "hour": "2025-03-26 20:00:00+00:00",
@@ -50761,6 +50773,12 @@
       "hourly_calls": 69.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Immigration",
+      "calls": 30113,
+      "hourly_calls": 95.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "National Security",
       "calls": 65336,
@@ -51895,6 +51913,12 @@
       "hourly_calls": 104.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "National Security",
+      "calls": 116608,
+      "hourly_calls": 65.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "Voter Rights",
       "calls": 105276,
@@ -53027,6 +53051,12 @@
       "category": "Voter Rights",
       "calls": 124050,
       "hourly_calls": 102.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Voter Rights",
+      "calls": 124162,
+      "hourly_calls": 112.0
     }
   ],
   "overall_1mo": [
@@ -54165,6 +54195,12 @@
       "hourly_calls": 515.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Budget",
+      "calls": 101388,
+      "hourly_calls": 604.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "Civil Rights",
       "calls": 75068,
@@ -55297,6 +55333,12 @@
       "category": "Civil Rights",
       "calls": 102707,
       "hourly_calls": 72.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Civil Rights",
+      "calls": 102780,
+      "hourly_calls": 73.0
     },
     {
       "hour": "2025-03-26 20:00:00+00:00",
@@ -56433,6 +56475,12 @@
       "hourly_calls": 0.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Consumer Protection",
+      "calls": 52542,
+      "hourly_calls": 8.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "Digital Rights",
       "calls": 1215,
@@ -57565,6 +57613,12 @@
       "category": "Digital Rights",
       "calls": 5063,
       "hourly_calls": 9.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Digital Rights",
+      "calls": 5068,
+      "hourly_calls": 5.0
     },
     {
       "hour": "2025-03-26 20:00:00+00:00",
@@ -58701,6 +58755,12 @@
       "hourly_calls": 16.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Education",
+      "calls": 235295,
+      "hourly_calls": 15.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "Environment",
       "calls": 43063,
@@ -59833,6 +59893,12 @@
       "category": "Environment",
       "calls": 44098,
       "hourly_calls": 15.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Environment",
+      "calls": 44099,
+      "hourly_calls": 1.0
     },
     {
       "hour": "2025-03-26 20:00:00+00:00",
@@ -60969,6 +61035,12 @@
       "hourly_calls": 4.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Foreign Affairs",
+      "calls": 229886,
+      "hourly_calls": 3.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "Government Oversight",
       "calls": 505438,
@@ -62101,6 +62173,12 @@
       "category": "Government Oversight",
       "calls": 508821,
       "hourly_calls": 10.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Government Oversight",
+      "calls": 508825,
+      "hourly_calls": 4.0
     },
     {
       "hour": "2025-03-26 20:00:00+00:00",
@@ -63237,6 +63315,12 @@
       "hourly_calls": 0.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Gun Safety",
+      "calls": 33369,
+      "hourly_calls": 12.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "Healthcare",
       "calls": 62044,
@@ -64369,6 +64453,12 @@
       "category": "Healthcare",
       "calls": 63142,
       "hourly_calls": 4.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Healthcare",
+      "calls": 63150,
+      "hourly_calls": 8.0
     },
     {
       "hour": "2025-03-26 20:00:00+00:00",
@@ -65505,6 +65595,12 @@
       "hourly_calls": 69.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Immigration",
+      "calls": 30113,
+      "hourly_calls": 95.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "LGBTQ+",
       "calls": 46407,
@@ -66637,6 +66733,12 @@
       "category": "LGBTQ+",
       "calls": 47363,
       "hourly_calls": 2.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "LGBTQ+",
+      "calls": 47369,
+      "hourly_calls": 6.0
     },
     {
       "hour": "2025-03-26 20:00:00+00:00",
@@ -67773,6 +67875,12 @@
       "hourly_calls": 104.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "National Security",
+      "calls": 116608,
+      "hourly_calls": 65.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "Nominations",
       "calls": 12103,
@@ -68905,6 +69013,12 @@
       "category": "Nominations",
       "calls": 14243,
       "hourly_calls": 148.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Nominations",
+      "calls": 14372,
+      "hourly_calls": 129.0
     },
     {
       "hour": "2025-03-26 20:00:00+00:00",
@@ -70041,6 +70155,12 @@
       "hourly_calls": 11.0
     },
     {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Social Safety Net",
+      "calls": 112331,
+      "hourly_calls": 0.0
+    },
+    {
       "hour": "2025-03-26 20:00:00+00:00",
       "category": "Voter Rights",
       "calls": 105276,
@@ -71173,6 +71293,12 @@
       "category": "Voter Rights",
       "calls": 124050,
       "hourly_calls": 102.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Voter Rights",
+      "calls": 124162,
+      "hourly_calls": 112.0
     }
   ],
   "Budget_1mo": [
@@ -72309,6 +72435,12 @@
       "category": "Budget",
       "calls": 100784,
       "hourly_calls": 515.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Budget",
+      "calls": 101388,
+      "hourly_calls": 604.0
     }
   ],
   "Civil_Rights_1mo": [
@@ -73445,6 +73577,12 @@
       "category": "Civil Rights",
       "calls": 102707,
       "hourly_calls": 72.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Civil Rights",
+      "calls": 102780,
+      "hourly_calls": 73.0
     }
   ],
   "Consumer_Protection_1mo": [
@@ -74581,6 +74719,12 @@
       "category": "Consumer Protection",
       "calls": 52534,
       "hourly_calls": 0.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Consumer Protection",
+      "calls": 52542,
+      "hourly_calls": 8.0
     }
   ],
   "Digital_Rights_1mo": [
@@ -75717,6 +75861,12 @@
       "category": "Digital Rights",
       "calls": 5063,
       "hourly_calls": 9.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Digital Rights",
+      "calls": 5068,
+      "hourly_calls": 5.0
     }
   ],
   "Education_1mo": [
@@ -76853,6 +77003,12 @@
       "category": "Education",
       "calls": 235280,
       "hourly_calls": 16.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Education",
+      "calls": 235295,
+      "hourly_calls": 15.0
     }
   ],
   "Environment_1mo": [
@@ -77989,6 +78145,12 @@
       "category": "Environment",
       "calls": 44098,
       "hourly_calls": 15.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Environment",
+      "calls": 44099,
+      "hourly_calls": 1.0
     }
   ],
   "Foreign_Affairs_1mo": [
@@ -79125,6 +79287,12 @@
       "category": "Foreign Affairs",
       "calls": 229883,
       "hourly_calls": 4.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Foreign Affairs",
+      "calls": 229886,
+      "hourly_calls": 3.0
     }
   ],
   "Government_Oversight_1mo": [
@@ -80261,6 +80429,12 @@
       "category": "Government Oversight",
       "calls": 508821,
       "hourly_calls": 10.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Government Oversight",
+      "calls": 508825,
+      "hourly_calls": 4.0
     }
   ],
   "Gun_Safety_1mo": [
@@ -81397,6 +81571,12 @@
       "category": "Gun Safety",
       "calls": 33357,
       "hourly_calls": 0.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Gun Safety",
+      "calls": 33369,
+      "hourly_calls": 12.0
     }
   ],
   "Healthcare_1mo": [
@@ -82533,6 +82713,12 @@
       "category": "Healthcare",
       "calls": 63142,
       "hourly_calls": 4.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Healthcare",
+      "calls": 63150,
+      "hourly_calls": 8.0
     }
   ],
   "Immigration_1mo": [
@@ -83669,6 +83855,12 @@
       "category": "Immigration",
       "calls": 30018,
       "hourly_calls": 69.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Immigration",
+      "calls": 30113,
+      "hourly_calls": 95.0
     }
   ],
   "LGBTQ+_1mo": [
@@ -84805,6 +84997,12 @@
       "category": "LGBTQ+",
       "calls": 47363,
       "hourly_calls": 2.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "LGBTQ+",
+      "calls": 47369,
+      "hourly_calls": 6.0
     }
   ],
   "National_Security_1mo": [
@@ -85941,6 +86139,12 @@
       "category": "National Security",
       "calls": 116543,
       "hourly_calls": 104.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "National Security",
+      "calls": 116608,
+      "hourly_calls": 65.0
     }
   ],
   "Nominations_1mo": [
@@ -87077,6 +87281,12 @@
       "category": "Nominations",
       "calls": 14243,
       "hourly_calls": 148.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Nominations",
+      "calls": 14372,
+      "hourly_calls": 129.0
     }
   ],
   "Social_Safety_Net_1mo": [
@@ -88213,6 +88423,12 @@
       "category": "Social Safety Net",
       "calls": 112331,
       "hourly_calls": 11.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Social Safety Net",
+      "calls": 112331,
+      "hourly_calls": 0.0
     }
   ],
   "Voter_Rights_1mo": [
@@ -89349,6 +89565,12 @@
       "category": "Voter Rights",
       "calls": 124050,
       "hourly_calls": 102.0
+    },
+    {
+      "hour": "2025-04-03 19:00:00+00:00",
+      "category": "Voter Rights",
+      "calls": 124162,
+      "hourly_calls": 112.0
     }
   ]
 }
