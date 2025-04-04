@@ -113,10 +113,17 @@
     let dataCache = {};
 
     async function loadData() {
-      const updatedAt = new Date().toLocaleString("en-US", { timeZone: "America/New_York" });
-      document.getElementById("lastUpdated").textContent = updatedAt;
       const response = await fetch("site_data/chart_data.json");
-      dataCache = await response.json();
+      const lastModified = response.headers.get("Last-Modified");
+      if (lastModified) {
+        const formatted = new Date(lastModified).toLocaleString("en-US", {
+          timeZone: "America/New_York"
+        });
+        document.getElementById("lastUpdated").textContent = formatted;
+      }
+
+      const data = await response.json();
+      dataCache = data;
 
       const categories = new Set();
       for (const key of Object.keys(dataCache)) {
