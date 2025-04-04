@@ -1,12 +1,5 @@
 To do:
-- ~~Add filters to show all categories, top 5, and top 10~~
-- add functionality to save all data in a backup repo and keep only the last month in the main repo
-- add auto commit and push to git with cron
-- add a table with chart information
-- add button to switch between last 48 hours, last 7 days, and last month
-- make display times eastern
-- prettify text on charts a bit
-- add cron tab creation to a python script?
+- Add summary stats that identify the category (or two) with the most calls and largest increase in calls during the time period
 
 How to install:
 
