@@ -188,13 +188,13 @@
         },
         margin: { l: 40, r: 20, t: 80, b: 120 },
         legend: {
-          orientation: window.innerWidth < 640 ? 'h' : 'v',
-          x: 1,
-          xanchor: 'right',
-          y: 4,
+          orientation: 'h',   // horizontal layout
+          x: 0.5,              // center on x-axis
+          xanchor: 'center',   // anchor at the center point
+          y: -0.375,             // place below the chart (tweak as needed)
           yanchor: 'top'
         }
-      }, { displayModeBar: false});
+      }, { displayModeBar: false, responsive: true });
 
       let tableHtml = '<table class="table-auto border-collapse w-full"><thead><tr><th class="border px-2">Hour (Eastern Time)</th><th class="border px-2">Category</th><th class="border px-2 text-right">Hourly Calls</th></tr></thead><tbody>';
       records.forEach(r => {
