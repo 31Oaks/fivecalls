@@ -64,7 +64,15 @@
           <i data-lucide="clipboard" class="w-4 h-4"></i> Copy Link
         </button>
       </div>
-      <div id="table" class="overflow-x-auto"></div>
+      <div class="mt-6">
+        <button id="toggleTable" class="flex items-center gap-1 text-blue-600 text-sm mb-2 hover:text-blue-800">
+          <i data-lucide="chevron-right" class="w-4 h-4 transition-transform duration-200" id="chevronIcon"></i>
+          <span>See detailed data</span>
+        </button>
+        <div id="tableWrapper" class="hidden overflow-x-auto">
+          <div id="table"></div>
+        </div>
+      </div>
     </main>
 
     <!-- Right column (was left + notes) -->
@@ -168,15 +176,25 @@
                        category.replace(/_/g, " ");
 
       Plotly.newPlot("chart", Object.values(traces), {
-        title: `Calls by Hour: ${titleCat} (${time})`,
+        title: {
+          text: `Calls by Hour<br><span style="font-size:14px; font-weight:normal;">${titleCat} ${time}</span>`,
+          font: { size: 18 }
+        },
         yaxis: isLogScale ? {
           type: 'log',
           tickformat: '~s'
         } : {
           type: 'linear'
         },
-        margin: { b: 120 }
-      });
+        margin: { l: 40, r: 20, t: 80, b: 120 },
+        legend: {
+          orientation: window.innerWidth < 640 ? 'h' : 'v',
+          x: 1,
+          xanchor: 'right',
+          y: 4,
+          yanchor: 'top'
+        }
+      }, { displayModeBar: false});
 
       let tableHtml = '<table class="table-auto border-collapse w-full"><thead><tr><th class="border px-2">Hour (Eastern Time)</th><th class="border px-2">Category</th><th class="border px-2 text-right">Hourly Calls</th></tr></thead><tbody>';
       records.forEach(r => {
@@ -228,6 +246,22 @@
     document.getElementById("categorySelect").addEventListener("change", updateView);
     document.getElementById("timeSelect").addEventListener("change", updateView);
     loadData();
+
+    document.getElementById("toggleTable").addEventListener("click", function () {
+      const wrapper = document.getElementById("tableWrapper");
+      const icon = document.getElementById("chevronIcon");
+      const label = this.querySelector("span");
+      const isHidden = wrapper.classList.contains("hidden");
+
+      wrapper.classList.toggle("hidden");
+
+      // Toggle icon direction
+      icon.setAttribute("data-lucide", isHidden ? "chevron-down" : "chevron-right");
+      lucide.createIcons(); // Refresh the icon
+
+      // Toggle text
+      label.textContent = isHidden ? "Hide detailed data" : "See detailed data";
+    });
   </script>
 </body>
 </html>
