@@ -172,15 +172,15 @@
         if (!traces[cat]) {
           traces[cat] = { x: [], y: [], name: cat, type: "scatter", mode: "lines" };
         }
-        const easternHour = new Date(r.hour).toLocaleString("en-US", {
-          timeZone: "America/New_York",
-          hour: "numeric",
-          minute: "2-digit",
-          month: "short",
-          day: "numeric"
-        });
-        traces[cat].x.push(easternHour);
-        traces[cat].y.push(r.hourly_calls);
+        const hourDate = new Date(r.hour);  // keep raw Date object
+        traces[cat].x.push(hourDate); 
+        traces[cat].y.push(r.hourly_calls);  
+      });
+
+      Object.values(traces).forEach(trace => {
+        const zipped = trace.x.map((xVal, i) => [xVal, trace.y[i]]);
+        zipped.sort((a, b) => new Date(a[0]) - new Date(b[0]));
+        [trace.x, trace.y] = [zipped.map(p => p[0]), zipped.map(p => p[1])];
       });
 
       const isLogScale = category === "overall" || category === "top5";
@@ -189,24 +189,28 @@
                        category.replace(/_/g, " ");
 
       Plotly.newPlot("chart", Object.values(traces), {
-        title: {
-          text: `Calls by Hour<br><span style="font-size:14px; font-weight:normal;">${titleCat} ${time}</span>`,
-          font: { size: 18 }
-        },
-        yaxis: isLogScale ? {
-          type: 'log',
-          tickformat: '~s'
-        } : {
-          type: 'linear'
-        },
-        margin: { l: 40, r: 20, t: 80, b: 120 },
-        legend: {
-          orientation: 'h',   // horizontal layout
-          x: 0.5,              // center on x-axis
-          xanchor: 'center',   // anchor at the center point
-          y: -0.375,             // place below the chart (tweak as needed)
-          yanchor: 'top'
-        }
+          title: {
+            text: `Calls by Hour<br><span style="font-size:14px; font-weight:normal;">${titleCat} ${time}</span>`,
+            font: { size: 18 }
+          },
+          xaxis: {
+            type: 'date',
+            tickformat: '%b %d\n%I %p',
+          },
+          yaxis: isLogScale ? {
+            type: 'log',
+            tickformat: '~s'
+          } : {
+            type: 'linear'
+          },
+          margin: { l: 40, r: 20, t: 80, b: 120 },
+          legend: {
+            orientation: 'h',
+            x: 0.5,
+            xanchor: 'center',
+            y: -0.375,
+            yanchor: 'top'
+          }
       }, { displayModeBar: false, responsive: true });
 
       let tableHtml = '<table class="table-auto border-collapse w-full"><thead><tr><th class="border px-2">Hour (Eastern Time)</th><th class="border px-2">Category</th><th class="border px-2 text-right">Hourly Calls</th></tr></thead><tbody>';
