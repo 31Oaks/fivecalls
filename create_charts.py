@@ -22,9 +22,15 @@ def load_data():
     return df
 
 def prepare_data(df, hours):
-    cutoff = pd.Timestamp.now(timezone.utc) - pd.Timedelta(hours=hours)
+    ending_timestamp = pd.Timestamp.now(timezone.utc)
 
+    # To use the latest timestamp in the database as the start of the lookback window
+    # (useful for testing), uncomment the following line:
+    # ending_timestamp = df['inserted_at_utc'].max()
+
+    cutoff = ending_timestamp - pd.Timedelta(hours=hours)
     extended_cutoff = cutoff - pd.Timedelta(hours=1)
+
     df = df[df['inserted_at_utc'] >= extended_cutoff]
 
     df['hour'] = df['inserted_at_utc'].dt.floor('h')
@@ -35,6 +41,7 @@ def prepare_data(df, hours):
 
     grouped = grouped[grouped['hour'] >= cutoff]
     return grouped
+
 
 def generate_all():
     os.makedirs('site_data', exist_ok=True)
