@@ -37,7 +37,7 @@ def parse_json_to_db(data, utc_time, db_name="fivecalls.db", table_name="flat_da
 
         print(f"✅ Appended {len(df)} records to {table_name} in {db_name_tmp}.")
 
-def fetch_and_store(keep_original_data=True, backup_path=backup_path):
+def fetch_and_store(keep_original_data=False, backup_path=backup_path):
     response = requests.get(url)
     utc_time = datetime.now(timezone.utc).replace(microsecond=0)
     safe_filename_time = utc_time.strftime("%Y%m%d_%H%M%S")
